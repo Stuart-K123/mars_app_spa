@@ -12,7 +12,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <Section {...section1}/>
         <Counter/>
-        <div className={"App-bottom"}></div>
+        <div className={"App-vspace"}></div>
       </header>
     </div>
   );

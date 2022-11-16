@@ -1,27 +1,16 @@
-import React from "react";
+import React, {useState} from "react";
 import '../App.css';
 
-interface _Props {}
-interface _State {counter: number}
-
-export class Counter extends React.Component<_Props, _State> {
-    constructor(props: _Props) {
-        super(props);
-        this.state = {
-            counter: 0
-        }
-    }
-
-    render() {
-        return (
-            <div>
-                <button
-                    className="circle"
-                    onClick={() => this.setState({counter: this.state.counter + 1})}
-                >
-                    {this.state.counter}
-                </button>
-            </div>
-        )
-    }
+export function Counter () {
+    const [counter, setCounter] = useState(0)
+    return (
+        <div>
+            <button
+                className="circle"
+                onClick={() => setCounter(counter + 1)}
+            >
+                {counter}
+            </button>
+        </div>
+    )
 }
