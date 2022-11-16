@@ -11,10 +11,10 @@ interface _props {
 
 export function Section(props: _props) {
         return (
-            <div>
-                <p className={"App-title"}>{props.title}</p>
+            <div className={'Section'}>
+                <p className={"Section-title"}>{props.title}</p>
                 <p>{props.para1}</p>
-                <img src={props.image} alt={props.imageName} />
+                <img src={props.image} className={"section-image-default"} alt={props.imageName} />
                 <p>{props.para2}</p>
             </div>
     );

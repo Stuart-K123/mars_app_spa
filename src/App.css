@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+.App-vspace {
+  margin-bottom: 50px;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -24,13 +28,31 @@
   color: white;
 }
 
-.App-title{
+.App-link {
+  color: #61dafb;
+}
+
+.Section {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.Section-title{
   font-size: larger;
   font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+.circle {
+  background: lightblue;
+  height: 200px;
+  width: 200px;
+  padding: 10%;
+  border-radius: 50%;
+  font-size: xxx-large;
+  font-weight: bold;
+}
+
+.section-image-default{
+  height: 30vmin;
 }
 
 @keyframes App-logo-spin {
