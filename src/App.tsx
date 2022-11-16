@@ -1,15 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
+import logo from './images/logo.svg';
+import NASA_logo from './images/NASA_logo.svg';
 import './App.css';
+import {Section} from "./components/section";
+import {section1} from "./text-src/section1";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
+        <Section {...section1}/>
         <a
           className="App-link"
           href="https://reactjs.org"
